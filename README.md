@@ -47,3 +47,19 @@ nano index.html
 </body>
 </html>
 ```
+**First go in the superuser mode**
+```
+sudo su
+```
+**use this command to copy new index.html file to my_volume**
+```
+cp /home/osboxes/temp/index.html /var/lib/docker/volumes/my_volume/_data
+```
+**Verify that the "index.html" file is accessible on your host machine at **
+```
+http://localhost:80
+```
+**or**
+```
+0.0.0.0:80
+```
