@@ -24,3 +24,26 @@ http://localhost:80
 ```
 0.0.0.0:80
 ```
+**Output** <br />
+![Screenshot (45)](https://user-images.githubusercontent.com/65711565/227248848-0b06a7f5-c32d-4e06-afc0-0187fb79e14a.png)
+
+**Create a new index.html**
+```
+touch index.html
+```
+**add some text to it.**
+```
+nano index.html
+```
+**Paste this in index.html**
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<h1>new html page</h1>
+</body>
+</html>
+```
