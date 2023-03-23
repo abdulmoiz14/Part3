@@ -55,7 +55,7 @@ sudo su
 ```
 cp /home/osboxes/temp/index.html /var/lib/docker/volumes/my_volume/_data
 ```
-**Verify that the "index.html" file is accessible on your host machine at **
+**Verify that the "index.html" file is accessible on your host machine at**
 ```
 http://localhost:80
 ```
@@ -63,3 +63,5 @@ http://localhost:80
 ```
 0.0.0.0:80
 ```
+**Output**
+![Screenshot (46)](https://user-images.githubusercontent.com/65711565/227255627-963afbd9-7862-4452-9796-8cd4be451236.png)
