@@ -14,18 +14,15 @@ docker volume ls
 **Create a new Docker container using the "nginx" image**
 ```
 docker pull nginx
-docker run --name my_nginx --volume my_volume:/usr/share/nginx/html -p 80:80 -d nginx
+docker run --name my_nginx --volume my_volume:/usr/share/nginx/html -p 8080:80 -d nginx
 ```
 **Verify that the "nginx" default page is accessible on your host machine at**
 ```
-http://localhost:80
-```
-**or**
-```
-0.0.0.0:80
+http://localhost:8080
 ```
 **Output** <br />
-![Screenshot (45)](https://user-images.githubusercontent.com/65711565/227248848-0b06a7f5-c32d-4e06-afc0-0187fb79e14a.png)
+
+![Screenshot (63)](https://user-images.githubusercontent.com/65711565/227740106-a9cf7764-b515-498e-a526-bc8c43fc11cf.png)
 
 **Create a new index.html**
 ```
@@ -57,11 +54,7 @@ docker cp /home/osboxes/temp/index.html my_nginx:/usr/share/nginx/html
 ```
 **Verify that the "index.html" file is accessible on your host machine at**
 ```
-http://localhost:80
-```
-**or**
-```
-0.0.0.0:80
+http://localhost:8080
 ```
 **Output**
 ![Screenshot (46)](https://user-images.githubusercontent.com/65711565/227255627-963afbd9-7862-4452-9796-8cd4be451236.png)
@@ -73,11 +66,8 @@ http://localhost:80
 ```
 http://localhost:8081
 ```
-**or**
-```
-0.0.0.0:8081
-```
 **Output**<br />
+![Screenshot (64)](https://user-images.githubusercontent.com/65711565/227740137-ad16443e-d878-4370-be9f-494c153a35f9.png)
 
 **Create a new index.html**
 ```
@@ -110,10 +100,6 @@ docker cp /home/osboxes/temp/about.html my_httpd2:/usr/local/apache2/htdocs
 **Verify that the "index.html" file is accessible on your host machine at**
 ```
 http://localhost:8081
-```
-**or**
-```
-0.0.0.0:8081
 ```
 **Output**<br />
 
