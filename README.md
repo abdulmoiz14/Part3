@@ -138,4 +138,19 @@ docker volume ls
 ```
 **Output**<br />
 ![Screenshot (56)](https://user-images.githubusercontent.com/65711565/227712958-9b1dcee4-63de-4cd4-80fb-66aac3810cba.png)
-
+**Create README.md file and describe your findings in markdown language.**
+```
+touch README.md
+nano README.md
+```
+**Create git repo and clone it to local file.**
+```
+git clone https://github.com/abdulmoiz14/Part3.git
+```
+**copy to README file to Part3 folder and push it to the github.**
+```
+cp README.md /Part3
+git add --all
+git commit -m "adding codebase to the github"
+git push -u origin main
+```
