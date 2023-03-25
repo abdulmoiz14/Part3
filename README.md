@@ -1,4 +1,4 @@
-# Assignment 3
+# Assignment 1
 ## Part 3: Docker Volume
 
 **Create a new Docker volume named "my_volume".**
