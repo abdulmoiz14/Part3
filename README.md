@@ -79,7 +79,6 @@ http://localhost:8081
 ```
 **Output**<br />
 
-
 **Create a new index.html**
 ```
 touch about.html
@@ -108,3 +107,35 @@ sudo su
 ```
 docker cp /home/osboxes/temp/about.html my_httpd2:/usr/local/apache2/htdocs
 ```
+**Verify that the "index.html" file is accessible on your host machine at**
+```
+http://localhost:8081
+```
+**or**
+```
+0.0.0.0:8081
+```
+**Output**<br />
+
+**Stop and remove the container.**
+```
+docker stop my_nginx
+docker stop my_httpd2
+docker rm my_nginx
+docker rm my_httpd2
+```
+**Verify that the "index.html" and "about.html" files are still available in the "my_volume" volume.**
+```
+cd /
+sudo ls /var/lib/docker/volumes/my_volume/_data
+```
+**Output**<br />
+![Screenshot (55)](https://user-images.githubusercontent.com/65711565/227712893-b42ba8eb-9f59-42da-bb3a-54b6f59134c3.png)
+**Remove the "my_volume" volume.**
+```
+docker volume rm my_volume
+docker volume ls
+```
+**Output**<br />
+![Screenshot (56)](https://user-images.githubusercontent.com/65711565/227712958-9b1dcee4-63de-4cd4-80fb-66aac3810cba.png)
+
